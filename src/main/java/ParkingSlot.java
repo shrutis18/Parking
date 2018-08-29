@@ -3,6 +3,12 @@ import enums.SlotCapacityType;
 public class ParkingSlot {
     private int slotNumber;
     private SlotCapacityType aCapacityType;
+    private Vehicle vehicle;
+
+
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
+    }
 
     public SlotCapacityType getCapacityType() {
         return aCapacityType;
@@ -15,5 +21,9 @@ public class ParkingSlot {
 
     public int getSlotNumber() {
         return slotNumber;
+    }
+
+    public Vehicle getVehicle() {
+        return vehicle;
     }
 }
